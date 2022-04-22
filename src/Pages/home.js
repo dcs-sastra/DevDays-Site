@@ -3,9 +3,9 @@ import { Container, Button, Form, FloatingLabel, Spinner, Row, Col , Card} from 
 import Faq from "../Components/accordian"
 import Navbar from "../Components/navbar"
 import Footer from "../Components/footer"
-import dummy from "../assets/dummy.png"
-import tendays from "../assets/10.svg"
-import fifteenworkshop from "../assets/15+.svg"
+import tendays from "../assets/days.svg"
+import fifteenworkshop from "../assets/workshop.svg"
+import logo from "../assets/logo.png"
 import './css/home.css'
 const Home = () => {
   return (
@@ -41,9 +41,9 @@ const Home = () => {
 </Container>
 
 <Container fluid className="about" >
-          <Container>
+          <Container className="pb-5">
           <div className="row">
-            <div className="col-lg-6 col-md-6 col-sm-8 mt-auto pb-5 pt-5 pl-2 ">
+            <div className="col-lg-6 col-md-12 col-sm-12 mt-auto pt-5 pl-2 ">
               <h1 className="pe-3 font">About <span className='colortext'>Developer Days</span></h1>
               <h5 className="pt-2 pb-2 font">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
@@ -52,31 +52,61 @@ const Home = () => {
                 Know more
               </Button>
             </div>
-            <div className="col-lg-6 col-md-6 col-sm-12 my-5 pr-5 ">
+            <div className="col-lg-6 col-md-6 col-sm-12 my-5 ">
               <img
-                src={dummy}
-                alt="dummyvector"
+                src={logo}
+                alt="DevDayslogo" 
                 className="img-fluid "
               />{" "}
             </div>
           </div>
 
-<div>
+{/* <div>
 <Row className="font">
                <Col>
-               <img src={tendays}/>
+               <img src={tendays}
+               width = {100} 
+               />
                <h1>Days</h1>
                </Col>
 
                <Col>
-               <img src={fifteenworkshop}/>
+               <img src={fifteenworkshop}
+               width = {100} 
+               
+               />
                <h1>Events</h1>
                </Col>
                <Col>
-               <img src={tendays}/>
+               <img src={tendays}
+               className="ml-2"
+               width = {100} 
+               />
                <h1>Domains</h1>
                </Col>
                </Row> 
+</div> */}
+
+</Container>
+<Container className="pb-5">
+<div className="row">
+  <div className="col-lg-4 col-s-12 col-md-4">
+    <img
+   src={tendays} 
+    />
+    <h2>Days</h2>
+  </div>
+  <div className="col-lg-4 col-s-12 col-md-4">
+    <img
+    src={fifteenworkshop}/>
+    <h2>Events</h2>
+  </div>
+  <div className="col-lg-4 col-s-12 col-md-4">
+    <img
+   src={tendays} 
+    />
+    <h2>Domains</h2>
+  </div>
 </div>
 </Container>
 </Container >
