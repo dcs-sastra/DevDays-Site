@@ -16,14 +16,13 @@ const navbar = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto"></Nav>
           <Nav className="text-center">
             
               <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/teams">Organizers</Nav.Link>
-              <Nav.Link href="/events">Schedule</Nav.Link>
+              <Nav.Link href="/#Organizers">Organizers</Nav.Link>
+              <Nav.Link href="/#schedule">Schedule</Nav.Link>
               <Nav.Link href="/#about">Badge</Nav.Link>
-              <Nav.Link href="/feed">FAQ</Nav.Link>
+              <Nav.Link href="/#faq">FAQ</Nav.Link>
            
           </Nav>
         </Navbar.Collapse>
