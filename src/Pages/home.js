@@ -5,7 +5,7 @@ import Navbar from "../Components/navbar";
 import Slickslider from "../Components/slickslider";
 import Footer from "../Components/footer";
 import Badge from "../Components/badge";
-import Badgelogo from "../assets/Badge.png"
+import Badgelogo from "../assets/Badge.svg"
 import tendays from "../assets/days.svg";
 import fifteenworkshop from "../assets/workshop.svg";
 import logo from "../assets/logo.png";
@@ -42,7 +42,7 @@ const Home = () => {
                 </Button>
               </div>
             </div>
-            <div className="col-lg-5 col-md-5 col-sm-12 mt-auto">
+            <div className="col-lg-5 col-md-5 col-sm-12 mt-auto pt-5">
               <img
                 src={landingvector}
                 alt=" landing-vector"
@@ -114,7 +114,7 @@ const Home = () => {
         />
 </div>
 </Container>
-        <Container fluid className="pt-5 my-5">
+        <Container  className="pt-5 my-5">
 
           <div className="">
             <h4>What can you expect? </h4>
@@ -125,34 +125,12 @@ const Home = () => {
       {/* Badge Part */}
 
       <Container fluid className="about">
-        <Container className="pb-5">
-          <div className="row">
-            <div className="col-lg-7 col-md-7 col-sm-12 my-5 pt-5 pl-2 ">
-              <h1 className="pe-3 font">
-                DevDay <span className="colortext"> Badge</span>
-              </h1>
-              <p className="pt-2 pb-2 font h6">
-                Now that you are here, how about personalising your DevFest 2021
-                profile? Upload an image and generate a personalised badge with
-                the DevFest 2021 frame. Also share your image using
-                #DevFestIndia on different social platforms.{" "}
-              </p>
-              <div className="pt-3">
-                <Badge />
-              </div>
-            </div>
-
-            <div className="col-lg-5 col-md-5 col-sm-12 my-5 ">
-              <div className="pt-5"></div>
-              <img src={Badgelogo} alt="Badgelog" className="img-fluid " />
-            </div>
-          </div>
-        </Container>
+      <Badge/>
       </Container>
 
       {/* Frequently asked part */}
       <Container fluid className=" my-5">
-        <Container fluid>
+        <Container >
           <div>
             <h1 className="pt-5 pb-5">
               Frequently <span className="colortext">Asked Questions</span>
@@ -177,21 +155,42 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="row text-center pt-5">
+        {/* <div className="row text-center pt-5 ">
           <div className="col-lg-3 col-sm-4 col-md-4">
-            <img src={socialmedia} />
+            <img src={socialmedia} style={{height:40, width:40}} />
           </div>
           <div className="col-lg-3 col-sm-4 col-md-4">
-            <img src={socialmedia} />
+            <img src={socialmedia} style={{height:40, width:40}}/>
           </div>
           <div className="col-lg-3 col-sm-4 col-md-4">
-            <img src={socialmedia} />
+            <img src={socialmedia} style={{height:40, width:40}}/>
           </div>
 
           <div className="col-lg-3 col-sm-4 col-md-4">
-            <img src={socialmedia} />
+            <img src={socialmedia} style={{height:40, width:40}}/>
+          </div>
+        </div> */}
+
+        <div className="d-flex flex-row flex-fill justify-content-center">
+
+          <div >
+            <img src={socialmedia} style={{height:40, width:40}}  className="m-5"/>
+          </div>
+          <div >
+            <img src={socialmedia} style={{height:40, width:40}} className="m-5"/>
+          </div>
+          <div >
+            <img src={socialmedia} style={{height:40, width:40}} className="m-5"/>
+          </div>
+          <div >
+            <img src={socialmedia} style={{height:40, width:40}} className="m-5"/>
           </div>
         </div>
+      </Container>
+
+
+      <Container>
+        <Footer/>
       </Container>
     </>
   );

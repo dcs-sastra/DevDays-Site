@@ -1,3 +1,8 @@
 .navabar{
     margin-top: 25%;
 }
+
+.nav-element:hover{
+    color: blue;
+
+}

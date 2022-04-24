@@ -6,8 +6,8 @@ class Faq extends Component {
     return (
     <>
      <Accordion defaultActiveKey="0" flush>
-  <Accordion.Item eventKey="0" className="about">
-    <Accordion.Header>What is DevDays?</Accordion.Header>
+  <Accordion.Item eventKey="0" >
+    <Accordion.Header >What is DevDays?</Accordion.Header>
     <Accordion.Body>
     DevDays is a series of technical workshops organised by team DCS, emphasising the Product-Development Cycle. It is all about 
     finding the perfect ways to inspire the community to learn and explore new technologies. So, we present you with this festive of
