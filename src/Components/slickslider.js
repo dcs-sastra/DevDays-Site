@@ -6,6 +6,7 @@ export default class Responsive extends Component {
     var settings = {
       dots: true,
       infinite: false,
+      arrows: true,
       speed: 500,
       slidesToShow: 4,
       slidesToScroll: 4,

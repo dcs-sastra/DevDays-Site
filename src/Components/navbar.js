@@ -18,11 +18,11 @@ const navbar = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="text-center">
             
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/#Organizers">Organizers</Nav.Link>
-              <Nav.Link href="/#schedule">Schedule</Nav.Link>
-              <Nav.Link href="/#about">Badge</Nav.Link>
-              <Nav.Link href="/#faq">FAQ</Nav.Link>
+             <div className="p-2"> <Nav.Link href="/">Home</Nav.Link></div>
+             <div className="p-2"> <Nav.Link href="/#schedule">Schedule</Nav.Link></div>
+             <div className="p-2"> <Nav.Link href="/#badge">Badge</Nav.Link></div>
+             <div className="p-2"> <Nav.Link href="/#organisers">Organisers</Nav.Link></div>
+             <div className="p-2"> <Nav.Link href="/#faq">FAQ</Nav.Link></div>
            
           </Nav>
         </Navbar.Collapse>
