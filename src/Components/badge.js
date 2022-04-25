@@ -49,7 +49,7 @@ const Badge = () =>{
 
             <div className="col-lg-5 col-md-5 col-sm-12 my-5 ">
               <div className="pt-5"></div>
-              <img src={preview} alt="Badgelog" className="img-fluid ml-5" />
+              <img src={Badgelogo} alt="Badgelog" className="img-fluid ml-5" />
             </div>
           </div>
         </Container>

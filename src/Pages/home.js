@@ -37,7 +37,7 @@ const Home = () => {
                 scratch. Let's celebrate the joy of learning!
               </p>
               <div className="pt-3">
-                <Button className="rounded-pill btn" size="md">
+                <Button className="rounded-pill btn px-4 py-3" size="md">
                   Register with homeversity
                 </Button>
               </div>
@@ -84,15 +84,15 @@ const Home = () => {
         </Container>
         <Container className="pb-5">
           <div className="row text-center">
-            <div className="col-lg-4 col-sm-12 col-md-4">
+            <div className="col-lg-4 col-sm-12 col-md-4 p-5">
               <img src={tendays} />
               <h2 className="pt-3">Days</h2>
             </div>
-            <div className="col-lg-4 col-sm-12 col-md-4">
+            <div className="col-lg-4 col-sm-12 col-md-4 p-5">
               <img src={fifteenworkshop} />
               <h2 className="pt-3">Events</h2>
             </div>
-            <div className="col-lg-4 col-sm-12 col-md-4">
+            <div className="col-lg-4 col-sm-12 col-md-4 p-5">
               <img src={tendays} />
               <h2 className="pt-3">Domains</h2>
             </div>
@@ -102,7 +102,7 @@ const Home = () => {
 
       {/* Timeline part */}
 
-      <Container fluid className="pt-5">
+      <Container fluid className="pt-5" id="schedule">
         <Container>
         <div className='row'>
         <h1 className="text-center pb-3 ">
@@ -114,7 +114,7 @@ const Home = () => {
         />
 </div>
 </Container>
-        <Container  className="pt-5 my-5">
+        <Container  className="pt-5 my-5" id="badge">
 
           <div className="">
             <h4>What can you expect? </h4>
@@ -129,7 +129,7 @@ const Home = () => {
       </Container>
 
       {/* Frequently asked part */}
-      <Container fluid className=" my-5">
+      <Container fluid className=" my-5" id="faq">
         <Container >
           <div>
             <h1 className="pt-5 pb-5">
