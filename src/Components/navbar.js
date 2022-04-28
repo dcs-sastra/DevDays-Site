@@ -23,6 +23,7 @@ const navbar = () => {
              <div className="p-2"> <Nav.Link href="/#badge">Badge</Nav.Link></div>
              <div className="p-2"> <Nav.Link href="/#organisers">Organisers</Nav.Link></div>
              <div className="p-2"> <Nav.Link href="/#faq">FAQ</Nav.Link></div>
+             <div className="p-2"> <Nav.Link href="/#contact">Contact</Nav.Link></div>
            
           </Nav>
         </Navbar.Collapse>

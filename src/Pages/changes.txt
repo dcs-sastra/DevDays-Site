@@ -1,2 +1,0 @@
-responsiveness of the register with homeversity in mobile view.
-

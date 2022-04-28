@@ -37,9 +37,11 @@ const Home = () => {
                 scratch. Let's celebrate the joy of learning!
               </p>
               <div className="pt-3">
+                <a href="https://play.google.com/store/apps/details?id=com.dcs.homeversity" target="_blank">
                 <Button className="rounded-pill btn px-4 py-3" size="md">
                   Register with homeversity
                 </Button>
+                </a>
               </div>
             </div>
             <div className="col-lg-5 col-md-5 col-sm-12 mt-auto pt-5">
@@ -70,9 +72,11 @@ const Home = () => {
                 ones.
               </p>
               <div className="pt-3">
+                <a href="https://www.instagram.com/p/Cct0XjAJZ_l/" target="_blank">
                 <Button className="rounded-pill btn " size="md">
                   Know more
                 </Button>
+</a>
               </div>
             </div>
 
@@ -143,7 +147,7 @@ const Home = () => {
       </Container>
 
       {/* Keep in touch part */}
-      <Container fluid>
+      <Container fluid id="contact">
         <div>
           <h1 className="text-center">
             Keep in touch with <span className="colortext">#DevDays</span>
@@ -155,43 +159,31 @@ const Home = () => {
           </p>
         </div>
 
-        {/* <div className="row text-center pt-5 ">
-          <div className="col-lg-3 col-sm-4 col-md-4">
-            <img src={socialmedia} style={{height:40, width:40}} />
-          </div>
-          <div className="col-lg-3 col-sm-4 col-md-4">
-            <img src={socialmedia} style={{height:40, width:40}}/>
-          </div>
-          <div className="col-lg-3 col-sm-4 col-md-4">
-            <img src={socialmedia} style={{height:40, width:40}}/>
-          </div>
-
-          <div className="col-lg-3 col-sm-4 col-md-4">
-            <img src={socialmedia} style={{height:40, width:40}}/>
-          </div>
-        </div> */}
-
         <div className="d-flex flex-row flex-fill justify-content-center">
 
           <div >
+            <a href="https://www.instagram.com/team_dcs_/" target="_blank">
             <img src={socialmedia} style={{height:40, width:40}}  className="m-5"/>
+            </a>
           </div>
           <div >
-            <img src={socialmedia} style={{height:40, width:40}} className="m-5"/>
+            <a href="https://twitter.com/dcs_sastra" target="_blank">
+            <img src={socialmedia} style={{height:40, width:40}}  className="m-5"/>
+            </a>
           </div>
           <div >
-            <img src={socialmedia} style={{height:40, width:40}} className="m-5"/>
+            <a href="https://www.instagram.com/team_dcs_/" target="_blank">
+            <img src={socialmedia} style={{height:40, width:40}}  className="m-5"/>
+            </a>
           </div>
           <div >
-            <img src={socialmedia} style={{height:40, width:40}} className="m-5"/>
+            <a href="https://www.linkedin.com/in/dcs-sastra/" target="_blank">
+            <img src={socialmedia} style={{height:40, width:40}}  className="m-5"/>
+            </a>
           </div>
         </div>
       </Container>
 
-
-      <Container>
-        <Footer/>
-      </Container>
     </>
   );
 };
