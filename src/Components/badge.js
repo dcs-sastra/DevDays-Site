@@ -2,6 +2,7 @@ import { Container, Button } from "react-bootstrap";
 import Badgelogo from "../assets/Badgeone.png"
 import { useRef, useState, useEffect} from 'react';
 import axios from "axios";
+import "./css/badge.css"
 
 const Badge = () =>{
   const imageRef = useRef(null)
@@ -46,7 +47,7 @@ const Badge = () =>{
               <h1 className="pe-3 font">
                 DevDays <span className="colortext"> Badge</span>
               </h1>
-              <p className="pt-2 pb-2 font h6">
+              <p className="pt-2 pb-2 font para h6">
                 Now that you are here, how getting your DevDays 2022
                 Badge? Upload an image and generate a personalised badge with
                 the DevDays 2022 frame. Also share your image using 
@@ -59,8 +60,9 @@ const Badge = () =>{
                  onChange={
                    something
                  }
-                 
+                hidden 
                 />
+<label for="imageUploader" >Choose File</label>
 
               </div>
             </div>
@@ -69,7 +71,7 @@ const Badge = () =>{
               <div className="pt-5"></div>
               <img src={Badgelogo} ref={imageRef} alt="Badgelog" className="img-fluid ml-5 img" id="img" />
               <a href="" ref={downloadRef} download="Badge.jpg">
-                <button>Download</button>
+                <Button className="rounded-pill btn px-4 py-3 my-5 " size="md">Download</Button>
               </a>
             </div>
           </div>

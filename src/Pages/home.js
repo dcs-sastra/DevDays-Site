@@ -2,7 +2,7 @@ import landingvector from "../assets/landingvector.svg";
 import { Container, Button } from "react-bootstrap";
 import Faq from "../Components/faq";
 import Navbar from "../Components/navbar";
-import Slickslider from "../Components/slickslider";
+import Carousel from "../Components/slickslider";
 import Footer from "../Components/footer";
 import Badge from "../Components/badge";
 import Badgelogo from "../assets/Badge.svg"
@@ -25,11 +25,11 @@ const Home = () => {
         <Container>
           <div className="row">
             <div className="col-lg-7 col-md-7 col-sm-12 mt-5 pt-5">
-              <h1 className="font">
+              <h1 className="font fw-bold">
                 The Developer and Innovation Festival of
                 <span className="colortext font"> SASTRA UNIVERSITY</span>
               </h1>
-              <p className="pt-2 pb-4 col-lg-10 font h6">
+              <p className="pt-2 pb-4 col-lg-10 para h6">
                 We bring you a unique fest to band together the world of tech
                 and nascent student developers. Developer Days are a set of
                 tailored workshops, curated by tech aficionados to help you
@@ -60,10 +60,10 @@ const Home = () => {
         <Container className="pb-5">
           <div className="row">
             <div className="col-lg-7 col-md-7 col-sm-12 mt-auto pt-5 pl-2 ">
-              <h1 className="pe-3 font">
+              <h1 className="pe-3 font fw-bold">
                 About <span className="colortext">Dev Days</span>
               </h1>
-              <p className="pt-2 pb-2 font h6">
+              <p className="pt-2 pb-2 font para h6">
                 Dev Days is a series of technical workshops organised by team
                 DCS, emphasising the Product-Development Cycle. It is all about
                 finding the perfect ways to inspire the community to learn and
@@ -109,7 +109,7 @@ const Home = () => {
       <Container fluid className="pt-5" id="schedule">
         <Container>
         <div className='row'>
-        <h1 className="text-center pb-3 ">
+        <h1 className="text-center fw-bold pb-3 ">
           DevDays <span className="colortext">Timeline</span>{" "}
         </h1>
         <img src={Timeline}
@@ -118,17 +118,20 @@ const Home = () => {
         />
 </div>
 </Container>
-        <Container  className="pt-5 my-5" id="badge">
+        <Container  className="pt-5 my-5">
 
           <div className="">
             <h4>What can you expect? </h4>
           </div>
+          <Container>
+            <Carousel/>
+          </Container>
         </Container>
       </Container>
 
       {/* Badge Part */}
 
-      <Container fluid className="about">
+      <Container fluid className="about" id="badge">
       <Badge/>
       </Container>
 
@@ -136,7 +139,7 @@ const Home = () => {
       <Container fluid className=" my-5" id="faq">
         <Container >
           <div>
-            <h1 className="pt-5 pb-5">
+            <h1 className="pt-5 pb-5 fw-bold">
               Frequently <span className="colortext">Asked Questions</span>
             </h1>
           </div>
@@ -149,11 +152,11 @@ const Home = () => {
       {/* Keep in touch part */}
       <Container fluid id="contact">
         <div>
-          <h1 className="text-center">
+          <h1 className="text-center fw-bold">
             Keep in touch with <span className="colortext">#DevDays</span>
           </h1>
           <h1 className="text-center"> for latest announcements</h1>
-          <p className="text-center pt-2">
+          <p className="text-center para pt-2">
             Let's get connected so that we can reach out to each other via a
             simple notification. Stake out #DevDays for the updates and news.
           </p>
@@ -163,22 +166,22 @@ const Home = () => {
 
           <div >
             <a href="https://www.instagram.com/team_dcs_/" target="_blank">
-            <img src={socialmedia} style={{height:40, width:40}}  className="m-5"/>
+            <img src={socialmedia} style={{height:40, width:40}}  className="m-3 m-lg-5"/>
             </a>
           </div>
           <div >
             <a href="https://twitter.com/dcs_sastra" target="_blank">
-            <img src={socialmedia} style={{height:40, width:40}}  className="m-5"/>
+            <img src={socialmedia} style={{height:40, width:40}}  className="m-3 m-lg-5"/>
             </a>
           </div>
           <div >
             <a href="https://www.instagram.com/team_dcs_/" target="_blank">
-            <img src={socialmedia} style={{height:40, width:40}}  className="m-5"/>
+            <img src={socialmedia} style={{height:40, width:40}}  className="m-3 m-lg-5"/>
             </a>
           </div>
           <div >
             <a href="https://www.linkedin.com/in/dcs-sastra/" target="_blank">
-            <img src={socialmedia} style={{height:40, width:40}}  className="m-5"/>
+            <img src={socialmedia} style={{height:40, width:40}}  className="m-3 m-lg-5"/>
             </a>
           </div>
         </div>

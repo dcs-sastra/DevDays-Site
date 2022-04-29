@@ -1,0 +1,14 @@
+label{
+  background-color: #1C5DCD;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+
+para{
+    line-height: 2rem;
+}
+
