@@ -2,15 +2,15 @@ import landingvector from "../assets/landingvector.svg";
 import { Container, Button } from "react-bootstrap";
 import Faq from "../Components/faq";
 import Navbar from "../Components/navbar";
-import Carousel from "../Components/slickslider";
-import Footer from "../Components/footer";
 import Badge from "../Components/badge";
-import Badgelogo from "../assets/Badge.svg"
 import tendays from "../assets/days.svg";
 import fifteenworkshop from "../assets/workshop.svg";
 import logo from "../assets/logo.png";
 import Timeline from "../assets/Timeline.svg";
-import socialmedia from "../assets/socialmedia.svg";
+import instagramicon from "../assets/instaicon.svg"
+import linkedinicon from "../assets/Linkedinicon.svg"
+import youtubeicon from "../assets/youtubeicon.svg"
+import twittericon from "../assets/Twitter.svg"
 
 import "./css/home.css";
 const Home = () => {
@@ -118,15 +118,6 @@ const Home = () => {
         />
 </div>
 </Container>
-        <Container  className="pt-5 my-5">
-
-          <div className="">
-            <h4>What can you expect? </h4>
-          </div>
-          <Container>
-            <Carousel/>
-          </Container>
-        </Container>
       </Container>
 
       {/* Badge Part */}
@@ -150,15 +141,16 @@ const Home = () => {
       </Container>
 
       {/* Keep in touch part */}
-      <Container fluid id="contact">
+      <Container fluid id="contact" className="about">
+        <Container className="pt-5">
         <div>
-          <h1 className="text-center fw-bold">
-            Keep in touch with <span className="colortext">#DevDays</span>
+          <h1 className="text-center fw-bold ">
+            Keep in touch with <span className="colortext">#team_dcs</span>
           </h1>
-          <h1 className="text-center"> for latest announcements</h1>
+          <h1 className="text-center fw-bold "> for latest announcements</h1>
           <p className="text-center para pt-2">
-            Let's get connected so that we can reach out to each other via a
-            simple notification. Stake out #DevDays for the updates and news.
+            Let's get connected in social medias so that we can reach out to each other via a
+            simple notification. Stake out #team_dcs for the updates and news.
           </p>
         </div>
 
@@ -166,27 +158,27 @@ const Home = () => {
 
           <div >
             <a href="https://www.instagram.com/team_dcs_/" target="_blank">
-            <img src={socialmedia} style={{height:40, width:40}}  className="m-3 m-lg-5"/>
+            <img src={instagramicon} style={{height:40, width:40}}  className="m-3 m-lg-5"/>
             </a>
           </div>
           <div >
             <a href="https://twitter.com/dcs_sastra" target="_blank">
-            <img src={socialmedia} style={{height:40, width:40}}  className="m-3 m-lg-5"/>
+            <img src={twittericon} style={{height:40, width:40}}  className="m-3 m-lg-5"/>
             </a>
           </div>
           <div >
-            <a href="https://www.instagram.com/team_dcs_/" target="_blank">
-            <img src={socialmedia} style={{height:40, width:40}}  className="m-3 m-lg-5"/>
+            <a href="hhttps://www.linkedin.com/in/dcs-sastra/" target="_blank">
+            <img src={linkedinicon} style={{height:40, width:40}}  className="m-3 m-lg-5"/>
             </a>
           </div>
           <div >
-            <a href="https://www.linkedin.com/in/dcs-sastra/" target="_blank">
-            <img src={socialmedia} style={{height:40, width:40}}  className="m-3 m-lg-5"/>
+            <a href="https://www.youtube.com/c/DeveloperCommunitySASTRA" target="_blank">
+            <img src={youtubeicon} style={{height:40, width:40}}  className="m-3 m-lg-5"/>
             </a>
           </div>
         </div>
       </Container>
-
+</Container>
     </>
   );
 };
