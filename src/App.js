@@ -9,6 +9,7 @@ function App() {
     <>
         <Helmet>
       <title>Dev Days 22</title>
+      <link rel="icon" type="image/png" href="./assets/logo.png" sizes="16x16" />
     </Helmet>
     <Home/>
   </>

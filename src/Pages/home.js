@@ -93,7 +93,7 @@ const Home = () => {
               <h2 className="pt-3">Days</h2>
             </div>
             <div className="col-lg-4 col-sm-12 col-md-4 p-5">
-              <img src={fifteenworkshop} />
+              <img src={tendays} />
               <h2 className="pt-3">Events</h2>
             </div>
             <div className="col-lg-4 col-sm-12 col-md-4 p-5">
