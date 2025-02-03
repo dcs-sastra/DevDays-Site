@@ -20,12 +20,12 @@ class Faq extends Component {
       Anyone who is currently studying under any course in SASTRA Deemed to be University are eligible to attend this workshop.
     </Accordion.Body>
   </Accordion.Item>
-  <Accordion.Item eventKey="2">
+  {/* <Accordion.Item eventKey="2">
     <Accordion.Header>How to register for DevDays?</Accordion.Header>
     <Accordion.Body className='about'>
     You can register for DevDays workshop using our Homeversity App.
     </Accordion.Body>
-  </Accordion.Item>
+  </Accordion.Item> */}
   <Accordion.Item eventKey="3">
     <Accordion.Header>Is is mandatory to register to participate in the workshop?</Accordion.Header>
     <Accordion.Body className='about'>

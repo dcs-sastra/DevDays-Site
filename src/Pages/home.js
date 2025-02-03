@@ -37,9 +37,9 @@ const Home = () => {
                 scratch. Let's celebrate the joy of learning!
               </p>
               <div className="pt-3">
-                <a href="https://play.google.com/store/apps/details?id=com.dcs.homeversity" target="_blank">
+                <a href="" target="_blank">
                 <Button className="rounded-pill btn px-4 py-3" size="md">
-                  Register with homeversity
+                  Register now!
                 </Button>
                 </a>
               </div>
@@ -72,7 +72,7 @@ const Home = () => {
                 ones.
               </p>
               <div className="pt-3">
-                <a href="https://www.instagram.com/p/Cct0XjAJZ_l/" target="_blank">
+                <a href="https://www.instagram.com/share/BAfp_D6yMg" target="_blank">
                 <Button className="rounded-pill btn " size="md">
                   Know more
                 </Button>
@@ -86,7 +86,7 @@ const Home = () => {
             </div>
           </div>
         </Container>
-        <Container className="pb-5">
+        {/* <Container className="pb-5">
           <div className="row text-center">
             <div className="col-lg-4 col-sm-12 col-md-4 p-5">
               <img src={tendays} />
@@ -101,7 +101,7 @@ const Home = () => {
               <h2 className="pt-3">Domains</h2>
             </div>
           </div>
-        </Container>
+        </Container> */}
       </Container>
 
       {/* Timeline part */}
@@ -122,9 +122,9 @@ const Home = () => {
 
       {/* Badge Part */}
 
-      <Container fluid className="about" id="badge">
+      {/* <Container fluid className="about" id="badge">
       <Badge/>
-      </Container>
+      </Container> */}
 
       {/* Frequently asked part */}
       <Container fluid className=" my-5" id="faq">
