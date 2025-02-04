@@ -1,8 +1,16 @@
-.navabar{
-    margin-top: 25%;
+.navabar {
+  margin-top: 25%;
 }
 
-.hclass:hover{
-    color: blue;
+.hclass:hover {
+  color: blue;
+}
 
+#logo {
+  width: 50%;
+}
+@media (min-width: 768px) {
+  #logo {
+    width: 20%;
+  }
 }
