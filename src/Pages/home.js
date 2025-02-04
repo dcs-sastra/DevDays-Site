@@ -61,7 +61,7 @@ const Home = () => {
           <div className="row">
             <div className="col-lg-7 col-md-7 col-sm-12 mt-auto pt-5 pl-2 ">
               <h1 className="pe-3 font fw-bold">
-                About <span className="colortext">Dev Days</span>
+                About <span className="colortext">DevDays</span>
               </h1>
               <p className="pt-2 pb-2 font para h6">
                 Dev Days is a series of technical workshops organised by team
