@@ -167,7 +167,7 @@ const Home = () => {
             </a>
           </div>
           <div >
-            <a href="hhttps://www.linkedin.com/in/dcs-sastra/" target="_blank">
+            <a href="https://www.linkedin.com/in/dcs-sastra/" target="_blank">
             <img src={linkedinicon} style={{height:40, width:40}}  className="m-3 m-lg-5"/>
             </a>
           </div>
