@@ -5,8 +5,8 @@ import Navbar from "../Components/navbar";
 import Badge from "../Components/badge";
 import tendays from "../assets/days.svg";
 import fifteenworkshop from "../assets/workshop.svg";
-import logo from "../assets/logo.png";
-import Timeline from "../assets/Timeline.svg";
+import logo from "../assets/Devdays Logo.svg";
+import Timeline from "../assets/TimeLine-Devdays'25.svg";
 import instagramicon from "../assets/instaicon.svg"
 import linkedinicon from "../assets/Linkedinicon.svg"
 import youtubeicon from "../assets/youtubeicon.svg"
@@ -37,7 +37,7 @@ const Home = () => {
                 scratch. Let's celebrate the joy of learning!
               </p>
               <div className="pt-3">
-                <a href="" target="_blank">
+                <a href="https://forms.gle/Zqob1ZK4VMbtNPXP9" target="_blank" rel="noreferrer">
                 <Button className="rounded-pill btn px-4 py-3" size="md">
                   Register now!
                 </Button>
@@ -72,7 +72,7 @@ const Home = () => {
                 ones.
               </p>
               <div className="pt-3">
-                <a href="https://www.instagram.com/share/BAfp_D6yMg" target="_blank">
+                <a href="https://www.instagram.com/share/BAfp_D6yMg" target="_blank" rel="noreferrer">
                 <Button className="rounded-pill btn " size="md">
                   Know more
                 </Button>
