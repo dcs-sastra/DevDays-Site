@@ -39,7 +39,7 @@ const Home = () => {
               <div className="pt-3">
                 <a href="https://forms.gle/Zqob1ZK4VMbtNPXP9" target="_blank" rel="noreferrer">
                 <Button className="rounded-pill btn px-4 py-3" size="md">
-                  Register now!
+                Interested? Click here
                 </Button>
                 </a>
               </div>
