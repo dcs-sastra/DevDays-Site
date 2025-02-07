@@ -11,7 +11,7 @@ import instagramicon from '../assets/instaicon.svg';
 import linkedinicon from '../assets/Linkedinicon.svg';
 import youtubeicon from '../assets/youtubeicon.svg';
 import twittericon from '../assets/Twitter.svg';
-
+import EventCard from '../Components/Card';
 import './css/home.css';
 const Home = () => {
   return (
@@ -108,6 +108,9 @@ const Home = () => {
           </div>
         </Container>
       </Container>
+      
+      <EventCard/>
+      
 
       {/* Badge Part */}
 
