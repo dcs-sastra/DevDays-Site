@@ -1,7 +1,6 @@
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import './css/navbar.css';
 import logo from '../assets/Devdays Logo.svg';
-
 const NavbarComponent = () => {
   return (
     <Navbar collapseOnSelect expand='md' bg='transparent' variant='light' className='navbar'>
@@ -25,6 +24,9 @@ const NavbarComponent = () => {
             </Nav.Link>
             <Nav.Link href='/#contact' className='p-2'>
               Contact
+            </Nav.Link>
+            <Nav.Link href='/#Card' className='p-2'>
+              Events
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
