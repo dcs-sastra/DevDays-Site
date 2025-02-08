@@ -19,14 +19,14 @@ const NavbarComponent = () => {
             <Nav.Link href='/#schedule' className='p-2'>
               Schedule
             </Nav.Link>
-            <Nav.Link href='/#faq' className='p-2'>
-              FAQ
+            <Nav.Link href='/#Card' className='p-2'>
+              Events
             </Nav.Link>
             <Nav.Link href='/#contact' className='p-2'>
               Contact
             </Nav.Link>
-            <Nav.Link href='/#Card' className='p-2'>
-              Events
+            <Nav.Link href='/#faq' className='p-2'>
+              FAQ
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

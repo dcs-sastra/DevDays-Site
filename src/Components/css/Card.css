@@ -1,62 +1,100 @@
-.box{
-    width: 100%; 
-    padding: 70px 0px;
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #f4f7fc;
 }
 
-.Card{
-    display: flex;
-    justify-content: space-around;
+.contain {
+  background-color: #f4f7fc;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  width: 380px;
+  padding: 30px;
+  border: 2px solid #1c5dcd;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1c5dcd;
+  margin-top: 15px;
+  text-transform: capitalize;
+}
+
+.card-text p {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.card-button {
+  background: #1c5dcd;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  margin-top: 16px;
+}
+
+.card-button:hover {
+  background: #144a9c;
+  transform: scale(1.05);
+  color: white;
+}
+
+.link {
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
     align-items: center;
-    width: 60%;
-    margin-left: 20%;
-    padding: 20px;
-    border: solid 2px #1C5DCD;
-    border-radius: 10px;
-    outline: solid 2px #1C5DCD;
-    outline-offset: 2px;
-}
-.cardbody img{
-    object-fit: cover;
-    width: 150px;
-    height: 150px;
-    border-radius: 4px;
-}
-.cardbody{
-    display: flex ;
-    gap: 30px;
-}
-.cardtitle{
-    font-size: 40px;
-    font-weight:600;
-    color: #1C5DCD;
-}
-.cardtext{
-    font-size: 20px;
-    color: black;
-}
-.card-button{
-    background-color: #1C5DCD;
-    color: white;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+  }
 
-@media (width <= 725px) {
-    .Card{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-    }
+  .card {
+    width: 90%;
+    padding: 20px;
   }
-  @media (width <= 490px) {
-    .cardbody{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
+
+  .link {
+    font-size: 20px;
   }
-  
+}

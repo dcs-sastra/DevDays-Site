@@ -31,13 +31,13 @@ const Home = () => {
               </h1>
               <p className='pt-2 pb-4 col-lg-10 para h6'>
                 We bring you a unique fest to band together the world of tech and nascent student developers. Developer
-                Days are a set of tailored workshops, curated by tech aficionados to help you scour the intricacies of
-                the product development cycle from scratch. Let's celebrate the joy of learning!
+                Days are a set of tailored workshops, curated by the Developer Community of Sastra to help you scour the
+                intricacies of the product development cycle from scratch. Let's celebrate the joy of learning!
               </p>
               <div className='pt-3'>
-                <a href='https://forms.gle/Zqob1ZK4VMbtNPXP9' target='_blank' rel='noreferrer'>
+                <a href='/#Card'>
                   <Button className='rounded-pill btn px-4 py-3' size='md'>
-                    Interested? Click here
+                    Register Now
                   </Button>
                 </a>
               </div>
@@ -108,9 +108,8 @@ const Home = () => {
           </div>
         </Container>
       </Container>
-      
-      <EventCard/>
-      
+
+      <EventCard />
 
       {/* Badge Part */}
 
