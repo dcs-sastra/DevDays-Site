@@ -4,7 +4,7 @@ const details = [
     name: 'Augumented Reality and 3D Modelling Workshop',
     date: '15th February 2025',
     time: '9.00 AM',
-    link: 'https://docs.google.com/forms/d/1zpuHqyFD9z5WBZBeHMjH8J0I7LnXVkdIQ6lSMb2hEOY/preview',
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLScC_ZK-wuEjWy_4tG-VkLi-kEUSZaLUvRJ00pgSEoaU8_AcWA/viewform ',
   },
   {
     img: '/ConPrm Poster.png',
