@@ -18,6 +18,7 @@ function Card() {
                 <div className='card-text'>
                   <p>{detail.date}</p>
                   <p>{detail.time}</p>
+                  <h5>{detail.info}</h5>
                 </div>
               </div>
             </div>
