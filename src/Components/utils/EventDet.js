@@ -13,7 +13,7 @@ const details = [
     date: '16th February 2025',
     time: '9.00 AM',
     link: 'https://docs.google.com/forms/d/e/1FAIpQLSclbxh9crGg8_tddaAwi7C4RoPsOcsp3GgYZA_JfEaDu7gXSw/viewform',
-    info: 'Seats are filling up fast',
+    info: 'Fully Booked',
   },
   {
     img: '/Android Poster.png',
