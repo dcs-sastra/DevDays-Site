@@ -1,26 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './css/Card.css';
 import details from './utils/EventDet';
-// import {db} from "../firebase"
-// import { collection, getDocs } from 'firebase/firestore';
+import { db } from "../firebase";
+import { collection, getDocs } from 'firebase/firestore';
 
 function Card() {
-  // const [items, setItems] = useState([]);
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-       
-  //       const itemsCollection = collection(db, 'items');
-  //       const querySnapshot = await getDocs(itemsCollection);
-  //       const data = querySnapshot.docs.map(doc => ({
-  //         id: doc.id,
-  //         ...doc.data()
-  //       }));
-  //       setItems(data);
-  //     } catch (err) {
-  //       console.error("Error fetching data ", err);
-  //     }
-  //   };
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const itemsCollection = collection(db, 'items');
+        const querySnapshot = await getDocs(itemsCollection);
+        const data = querySnapshot.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data()
+        }));
+        setItems(data);
+      } catch (err) {
+        console.error("Error fetching data ", err);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <div className='contain'>
@@ -28,7 +31,7 @@ function Card() {
         Our Workshops
       </h1>
       <div className='card-container' id='Card'>
-        {details.map((detail, index) => (
+        {items.map((detail, index) => (
           <div className='card' key={index}>
             <div className='card-body'>
               <img src={detail.img} alt='Profile Pic' className='card-image' />
