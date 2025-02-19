@@ -1,27 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import './css/Card.css';
 import details from './utils/EventDet';
-import { db } from "../firebase";
+import { db } from '../firebase';
 import { collection, getDocs } from 'firebase/firestore';
 
 function Card() {
   const [items, setItems] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const itemsCollection = collection(db, 'items');
-        const querySnapshot = await getDocs(itemsCollection);
-        const data = querySnapshot.docs.map(doc => ({
-          id: doc.id,
-          ...doc.data()
-        }));
-        setItems(data);
-      } catch (err) {
-        console.error("Error fetching data ", err);
-      }
-    };
+  const fetchData = async () => {
+    try {
+      const itemsCollection = collection(db, 'Dev_Workshops');
+      const querySnapshot = await getDocs(itemsCollection);
+      const data = querySnapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      setItems(data);
+    } catch (err) {
+      console.error('Error fetching data ', err);
+    }
+  };
 
+  useEffect(() => {
     fetchData();
   }, []);
 
